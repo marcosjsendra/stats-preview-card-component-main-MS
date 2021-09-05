@@ -1,0 +1,173 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  font-size: 1.5rem;
+  color: white;
+  background-color: #090b1a;
+}
+
+.card {
+  width: 110rem;
+  margin: 28rem auto;
+  background-color: #1b1938;
+  display: flex;
+  flex-direction: row;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.08);
+}
+
+.violet_tittle {
+  color: #aa5cdb;
+}
+
+.content {
+  align-self: center;
+  padding: 0 6rem;
+  margin-right: 4rem;
+  margin-left: 1rem;
+}
+
+.content_tittle {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 3.6rem;
+  margin-bottom: 2.6rem;
+}
+
+.content_text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 2.4rem;
+  margin-bottom: 7rem;
+}
+
+.content_txtnproof {
+  padding-right: 2rem;
+}
+
+.content_proof {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+
+.proof_box {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.proof_box-tittle {
+  margin-bottom: 0.85rem;
+  font-size: 2.35rem;
+}
+
+.proof_box-text {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.2rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+}
+
+.hero_img {
+  padding: 22rem 26.5rem;
+  background-size: cover;
+  background-image: url("image-header-desktop.970e2854.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.img_article {
+  position: relative;
+}
+
+.img_article::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #aa5cdb;
+  z-index: 1;
+  mix-blend-mode: multiply;
+}
+
+.github {
+  width: 80rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  background-color: #0d1026;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  padding: 3rem;
+  border-radius: 2rem;
+  border: rgba(255, 255, 255, 0.15) solid 1px;
+}
+
+a:visited, a:link {
+  color: #aa5cdb;
+}
+
+@media (max-width: 60rem) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 10rem auto;
+  }
+
+  .content {
+    order: 2;
+    padding: 3.8rem 3.2rem;
+    margin: 0;
+    text-align: center;
+  }
+  .content_tittle {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+  }
+  .content_text {
+    margin-bottom: 4rem;
+    padding: 0 1.2rem;
+  }
+  .content_txtnproof {
+    padding: 0;
+  }
+
+  .content_proof {
+    padding-right: 0;
+    flex-direction: column;
+  }
+  .content_proof .proof_box:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+
+  .img_article {
+    order: 1;
+  }
+
+  .hero_img {
+    padding: 14rem;
+    background-size: cover;
+    background-image: url("image-header-mobile.84ce2a8c.jpg");
+  }
+
+  .github {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=index.fa02a0b5.css.map */
